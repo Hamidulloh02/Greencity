@@ -40,7 +40,7 @@
         <div class="mobilemenu__backdrop"></div>
         <div class="mobilemenu__body">
             <div class="mobilemenu__header">
-                <div class="mobilemenu__title">Menu</div><button type="button" class="mobilemenu__close">
+                <div class="mobilemenu__title">{% trans "Menu" %}</div><button type="button" class="mobilemenu__close">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
                 </button>
             </div>
@@ -49,7 +49,7 @@
                     data-collapse-opened-class="mobile-links__item--open">
                     <li class="mobile-links__item !important" data-collapse-item>
                         <div class="mobile-links__item-title"><a href="/shop"
-                                class="mobile-links__item-link">Shop</a></div>
+                                class="mobile-links__item-link">{% trans "Shop" %}</a></div>
                     </li>
                     <li class="mobile-links__item" data-collapse-item>
                         <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">Categories</a>
@@ -355,48 +355,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="topbar__item">
-                                <div class="topbar-dropdown"><button class="topbar-dropdown__btn"
-                                        type="button">Language: <span class="topbar__item-value">EN</span> <svg
-                                            width="7px" height="5px">
-                                            <use xlink:href="images/sprite.svg#arrow-rounded-down-7x5"></use>
-                                        </svg></button>
-                                    <div class="topbar-dropdown__body"><!-- .menu -->
-                                        <ul class="menu menu--layout--topbar menu--with-icons">
-                                            <li><a href="#">
-                                                    <div class="menu__icon"><img
-                                                            srcset="images/languages/language-1.png, images/languages/language-1@2x.png 2x"
-                                                            src="{% static 'images/languages/language-1.png'%}" alt="">
-                                                    </div>English
-                                                </a></li>
-                                            <li><a href="#">
-                                                    <div class="menu__icon"><img
-                                                            srcset="images/languages/language-2.png, images/languages/language-2@2x.png 2x"
-                                                            src="{% static 'images/languages/language-2.png'%}" alt="">
-                                                    </div>French
-                                                </a></li>
-                                            <li><a href="#">
-                                                    <div class="menu__icon"><img
-                                                            srcset="images/languages/language-3.png, images/languages/language-3@2x.png 2x"
-                                                            src="{% static 'images/languages/language-3.png'%}" alt="">
-                                                    </div>German
-                                                </a></li>
-                                            <li><a href="#">
-                                                    <div class="menu__icon"><img
-                                                            srcset="images/languages/language-4.png, images/languages/language-4@2x.png 2x"
-                                                            src="{% static 'images/languages/language-4.png'%}" alt="">
-                                                    </div>Russian
-                                                </a></li>
-                                            <li><a href="#">
-                                                    <div class="menu__icon"><img
-                                                            srcset="images/languages/language-5.png, images/languages/language-5@2x.png 2x"
-                                                            src="{% static 'images/languages/language-5.png'%}" alt="">
-                                                    </div>Italian
-                                                </a></li>
-                                        </ul><!-- .menu / end -->
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div><!-- .topbar / end -->
@@ -553,18 +512,74 @@
                                         </li>
                                         <li class="nav-links__item"><a href="contact-us.html"><span>Contact
                                                     Us</span></a></li>
-                                        <!-- <li class="nav-links__item"><a
-                                                href="https://themeforest.net/user/kos9/portfolio"><span>Buy
-                                                    Theme</span></a></li> -->
+                                        <li class="nav-links__item">
+                                            <div class="topbar__item">
+                                                <div class="topbar-dropdown">
+                                                    <button class="topbar-dropdown__btn" type="button">
+                                                        {% trans "Language" %}: 
+                                                        <span class="topbar__item-value">
+                                                            {% if LANGUAGE_CODE == "uz" %}
+                                                                🇺🇿 O‘zbek
+                                                            {% elif LANGUAGE_CODE == "ru" %}
+                                                                🇷🇺 Русский
+                                                            {% else %}
+                                                                🌍 English
+                                                            {% endif %}
+                                                        </span> 
+                                                        <svg width="7px" height="5px">
+                                                            <use xlink:href="{% static 'images/sprite.svg#arrow-rounded-down-7x5' %}"></use>
+                                                        </svg>
+                                                    </button>
+                                            
+                                                    <div class="topbar-dropdown__body">
+                                                        <ul class="menu menu--layout--topbar menu--with-icons">
+                                                            <!-- Uzbek -->
+                                                            <li>
+                                                                <a href="#" class="language-link" data-form-id="lang-uz">
+                                                                    <div class="menu__icon">
+                                                                        <img src="{% static 'images/languages/language-1.png' %}" alt="">
+                                                                    </div>
+                                                                    🇺🇿 O‘zbek
+                                                                </a>
+                                                                <form id="lang-uz" action="/uz/" method="post" style="display: none;">
+                                                                    {% csrf_token %}
+                                                                    <input type="hidden" name="language" value="uz">
+                                                                </form>
+                                                            </li>
+                                                    
+                                                            <!-- Russian -->
+                                                            <li>
+                                                                <a href="#" class="language-link" data-form-id="lang-ru">
+                                                                    <div class="menu__icon">
+                                                                        <img src="{% static 'images/languages/language-2.png' %}" alt="">
+                                                                    </div>
+                                                                    🇷🇺 Русский
+                                                                </a>
+                                                                <form id="lang-ru" action="/ru/" method="post" style="display: none;">
+                                                                    {% csrf_token %}
+                                                                    <input type="hidden" name="language" value="ru">
+                                                                </form>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    
+                                                    <script>
+                                                        document.querySelectorAll('.language-link').forEach(link => {
+                                                            link.addEventListener('click', function(event) {
+                                                                event.preventDefault();
+                                                                let formId = this.getAttribute('data-form-id');
+                                                                document.getElementById(formId).submit();
+                                                                setTimeout(() => location.reload(), 500); // 0.5 sekunddan keyin sahifani yangilash
+                                                            });
+                                                        });
+                                                    </script>
+                                                    
+                                                </div>
+                                            </div>
+                                        </li>
+
                                     </ul>
                                 </div><!-- .nav-links / end -->
-                                <form action="{% url 'set_language' %}" method="post" id="languageForm">
-                                    {% csrf_token %}
-                                    <select name="language" onchange="document.getElementById('languageForm').submit();">
-                                        <option value="uz">O‘zbek</option>
-                                        <option value="ru">Русский</option>
-                                    </select>
-                                </form>
                                 <div class="nav-panel__indicators">
                                     <div class="indicator indicator--trigger--click"><button type="button"
                                             class="indicator__button"><span class="indicator__area"><svg
@@ -687,8 +702,9 @@
                     </div>
                 </div>
             </div>
-            <h1>{% trans "Salom, xush kelibsiz!" %}</h1>
-            <p>{% trans "Bu sayt ikki tilda ishlaydi." %}</p>
+            <h1>{% trans "Welcome to our website" %}</h1>
+            <p>{% trans "This is a sample text." %}</p>
+            
         </header><!-- desktop site__header / end --><!-- site__body -->
         <div class="site__body"><!-- .block-slideshow -->
             <div class="block-slideshow block-slideshow--layout--full block">

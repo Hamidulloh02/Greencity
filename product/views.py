@@ -10,6 +10,8 @@ from rest_framework.views import APIView
 from django.conf.urls import handler404
 from django.shortcuts import get_object_or_404
 from django.utils.translation import gettext_lazy as _
+from django.utils.deprecation import MiddlewareMixin
+
 # from rest_framework.authentication import BaseAuthentication
 
 # Pagination import
@@ -123,5 +125,11 @@ class OnlyProListView(ListAPIView):
 class PopularCategoryView(ListAPIView):
     queryset = PopularCategory.objects.all()
 
+# class LanguageMiddleware(MiddlewareMixin):
+#     def process_request(self, request):
+#         if request.LANGUAGE_CODE == "uz":
+#             print("Foydalanuvchi rus tilidan foydalanmoqda.")
+#         else:
+#             print(f"Foydalanuvchi boshqa til ishlatmoqda: {request.LANGUAGE_CODE}")
 
 

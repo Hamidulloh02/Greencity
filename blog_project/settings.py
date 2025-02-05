@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 import os.path
-
+import json
+from django.core.exceptions import ImproperlyConfigured
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -59,6 +60,10 @@ LANGUAGES = [
     ('uz', _('Uzbek')),
     ('ru', _('Russian')),
 ]
+
+USE_I18N = True
+USE_L10N = True
+USE_TZ = True
 
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale'),
@@ -108,7 +113,7 @@ ROOT_URLCONF = 'blog_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -116,6 +121,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.i18n',  # Bu qatorni qo'shing
             ],
         },
     },
@@ -170,6 +176,9 @@ STATIC_ROOT = os.path.join(BASE_DIR,'static/')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # Tilni saqlash uchun session
+LANGUAGE_COOKIE_NAME = 'django_language' 
 
 #CKEDITOR CONFIG
 CKEDITOR_CONFIGS = {
