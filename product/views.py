@@ -24,7 +24,7 @@ from rest_framework.filters import SearchFilter
 # Create your views here.
 def main(request):
     products = Product.objects.all()  # Fetch all products
-    top_products = Topproduct.objects.all()  # Fetch all top products
+    top_products = PopularCategory.objects.all()  # Fetch all top products
     return render(request, 'index.html', {
         'products': products,
         'top_products': top_products,

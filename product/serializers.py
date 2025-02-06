@@ -22,6 +22,11 @@ class descriptionSerializers(serializers.ModelSerializer):
 class TopproductSerializers(serializers.ModelSerializer):
     class Meta:
         model = Topproduct
+        fields = ('id','title','img','info','created_at','updated_at')
+
+class PupularSerializers(serializers.ModelSerializer):
+    class Meta:
+        model = Topproduct
         fields = ('id','img','created_at','updated_at')
 
 class productSerializers(serializers.ModelSerializer):
