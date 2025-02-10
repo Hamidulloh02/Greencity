@@ -37,6 +37,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'e7bb-213-230-112-172.ngrok-free.app'
 
 INSTALLED_APPS = [
     'jazzmin',
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -138,6 +139,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+TRANSLATABLE_MODEL_MODULES = []
+TRANSLATABLE_MODEL_MODULES = [
+    'blog_project.models',  # O'zingizning modelingiz moduli nomini yozing
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -167,6 +172,9 @@ TIME_ZONE = 'Asia/Tashkent'
 USE_I18N = True
 
 USE_TZ = True
+
+AUTH_USER_MODEL = 'auth.User'
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/

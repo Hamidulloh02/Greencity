@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-05 10:39+0500\n"
+"POT-Creation-Date: 2025-02-10 11:19+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,42 +20,60 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\blog_project\settings.py:60
+#: .\blog_project\settings.py:61
 msgid "Uzbek"
 msgstr ""
 
-#: .\blog_project\settings.py:61
+#: .\blog_project\settings.py:62
 msgid "Russian"
 msgstr ""
 
-#: .\product\templates\index.html:43
+#: .\product\templates\index.html:45 .\product\templates\index.html:400
+#: .\product\templates\shop.html:52
 msgid "Menu"
 msgstr "Главный"
 
-#: .\product\templates\index.html:52
+#: .\product\templates\index.html:57 .\product\templates\index.html:139
+#: .\product\templates\index.html:499
 msgid "Shop"
 msgstr "Магазин"
 
-#: .\product\templates\index.html:361
-msgid "Language"
-msgstr "язык"
+#: .\product\templates\index.html:788
+msgid "Free Shipping"
+msgstr "Бесплатная доставка"
 
-#: .\product\templates\index.html:576
-msgid "Tilni almashtirish"
-msgstr "Tilni almashtirish"
+#: .\product\templates\index.html:789
+msgid "For orders from $50"
+msgstr "Для заказов от 50$"
 
-#: .\product\templates\index.html:700
-msgid "Welcome to our website"
-msgstr "Добро пожаловать на наш сайт"
+#: .\product\templates\index.html:1580
+msgid "Top Rated Products"
+msgstr "Товары с высоким рейтингом"
 
-#: .\product\templates\index.html:701
-msgid "This is a sample text."
-msgstr "Это пример текста."
+#: .\product\templates\index.html:1726
+msgid "Special Offers"
+msgstr "Специальные предложения"
 
-#: .\product\views.py:29
+#: .\product\templates\index.html:1873
+msgid "Bestsellers "
+msgstr " Бестселлеры"
+
+#: .\product\views.py:37
 msgid "Main Page"
 msgstr ""
 
-#: .\product\views.py:30
+#: .\product\views.py:38
 msgid "Welcome to our store!"
 msgstr ""
+
+#~ msgid "Language"
+#~ msgstr "язык"
+
+#~ msgid "Tilni almashtirish"
+#~ msgstr "Tilni almashtirish"
+
+#~ msgid "Welcome to our website"
+#~ msgstr "Добро пожаловать на наш сайт"
+
+#~ msgid "This is a sample text."
+#~ msgstr "Это пример текста."

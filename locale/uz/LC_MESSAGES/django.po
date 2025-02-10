@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-05 10:39+0500\n"
+"POT-Creation-Date: 2025-02-10 11:19+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,42 +18,57 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: .\blog_project\settings.py:60
+#: .\blog_project\settings.py:61
 msgid "Uzbek"
 msgstr ""
 
-#: .\blog_project\settings.py:61
+#: .\blog_project\settings.py:62
 msgid "Russian"
 msgstr ""
 
-#: .\product\templates\index.html:43
+#: .\product\templates\index.html:45 .\product\templates\index.html:400
+#: .\product\templates\shop.html:52
 msgid "Menu"
 msgstr "Bosh sahifa"
 
-#: .\product\templates\index.html:52
+#: .\product\templates\index.html:57 .\product\templates\index.html:139
+#: .\product\templates\index.html:499
 msgid "Shop"
 msgstr "Maxsulotlar"
 
-#: .\product\templates\index.html:361
-msgid "Language"
-msgstr ""
+#: .\product\templates\index.html:788
+msgid "Free Shipping"
+msgstr "Bepul yetkazib berish"
 
-#: .\product\templates\index.html:576
-msgid "Tilni almashtirish"
-msgstr "Переключить язык"
+#: .\product\templates\index.html:789
+msgid "For orders from $50"
+msgstr "$50 dan boshlab buyurtmalar uchun"
 
-#: .\product\templates\index.html:700
-msgid "Welcome to our website"
-msgstr "Bu oddiy web site "
+#: .\product\templates\index.html:1580
+msgid "Top Rated Products"
+msgstr "Eng yuqori baholangan mahsulotlar"
 
-#: .\product\templates\index.html:701
-msgid "This is a sample text."
-msgstr "bu oddiy text"
+#: .\product\templates\index.html:1726
+msgid "Special Offers"
+msgstr "Maxsus takliflar"
 
-#: .\product\views.py:29
+#: .\product\templates\index.html:1873
+msgid "Bestsellers "
+msgstr "Eng ko‘p sotilganlar"
+
+#: .\product\views.py:37
 msgid "Main Page"
 msgstr ""
 
-#: .\product\views.py:30
+#: .\product\views.py:38
 msgid "Welcome to our store!"
 msgstr ""
+
+#~ msgid "Tilni almashtirish"
+#~ msgstr "Переключить язык"
+
+#~ msgid "Welcome to our website"
+#~ msgstr "Bu oddiy web site "
+
+#~ msgid "This is a sample text."
+#~ msgstr "bu oddiy text"

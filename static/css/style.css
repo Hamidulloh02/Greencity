@@ -2099,7 +2099,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .product-card__image img {
     max-width: 100%;
     display: block;
-    position: absolute
+    /* position: absolute */ 
 }
 
 .product-card__quickview {

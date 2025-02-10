@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework.generics import ListAPIView, RetrieveAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView, RetrieveUpdateAPIView
-from .models import Product, Description, Category, Productclass, Brand, Topproduct, OnlyOneProduct, PopularCategory
+from .models import Product, Description, Category, Productclass, Brand, Topproduct, OnlyOneProduct, PopularCategory,TopRated,Special,Bestsellers
 from .serializers import productSerializers, descriptionSerializers, CategorySerializer, ClassSerializers, BrandSerializers, TopproductSerializers, OnlyOneProSerializers
 from rest_framework.permissions import IsAuthenticated
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -25,13 +25,19 @@ from rest_framework.filters import SearchFilter
 def main(request):
     products = Product.objects.all()  # Fetch all products
     top_products = PopularCategory.objects.all()  # Fetch all top products
+    top_rateds = TopRated.objects.all().order_by('-id')[:3]
+    specials = Special.objects.all().order_by('-id')[:3]
+    bestsellers = Bestsellers.objects.all().order_by('-id')[:3]
     return render(request, 'index.html', {
         'products': products,
         'top_products': top_products,
+        'top_rateds': top_rateds,
+        'specials': specials,
+        'bestsellers': bestsellers,
         'title': _('Main Page'),
         'welcome_message': _('Welcome to our store!'),
     })
-    return render(request, 'index.html', {'products': products, 'top_products': top_products})
+    return render(request, 'index.html', {'products': products, 'top_products': top_products, 'top_rateds': top_rateds, 'specials': specials, 'bestsellers': bestsellers})
 def handler404(request,exception):
     return render(request, '404.html',status=404)
 def product_list(request):

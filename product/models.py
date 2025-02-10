@@ -32,8 +32,8 @@ class Product(models.Model):
     info = RichTextField()
     descript_text = RichTextField()
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
-    productclass = models.ForeignKey(Productclass, on_delete=models.SET_NULL,null=True)
-    brand = models.ForeignKey(Brand, on_delete=models.SET_NULL,null=True)
+    productclass = models.ForeignKey(Productclass, on_delete=models.SET_NULL,null=True,blank=True)
+    brand = models.ForeignKey(Brand, on_delete=models.SET_NULL,null=True,blank=True)
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
@@ -64,6 +64,33 @@ class Description(models.Model):
 class PopularCategory(models.Model):
     title = models.CharField(max_length=1000)
     img = models.ImageField(upload_to="./images")
+    info = RichTextField()
+    descript_text = RichTextField()
+
+    def __str__(self):
+        return self.title
+    
+class TopRated(models.Model):
+    img = models.ImageField(upload_to="./images")
+    title = models.CharField(max_length=1000)
+    info = RichTextField()
+    descript_text = RichTextField()
+
+    def __str__(self):
+        return self.title
+
+class Special(models.Model):
+    img = models.ImageField(upload_to="./images")
+    title = models.CharField(max_length=1000)
+    info = RichTextField()
+    descript_text = RichTextField()
+
+    def __str__(self):
+        return self.title
+    
+class Bestsellers(models.Model):
+    img = models.ImageField(upload_to="./images")
+    title = models.CharField(max_length=1000)
     info = RichTextField()
     descript_text = RichTextField()
 
