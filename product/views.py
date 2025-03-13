@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework.generics import ListAPIView, RetrieveAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView, RetrieveUpdateAPIView
-from .models import Product, Description, Category, Productclass, Brand, Topproduct, OnlyOneProduct, PopularCategory,TopRated,Special,Bestsellers
+from .models import Product, Description, Category, Productclass, Brand, Topproduct, OnlyOneProduct, PopularCategory,OnlyOneProduct
 from .serializers import productSerializers, descriptionSerializers, CategorySerializer, ClassSerializers, BrandSerializers, TopproductSerializers, OnlyOneProSerializers
 from rest_framework.permissions import IsAuthenticated
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -22,22 +22,40 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter
 
 # Create your views here.
-def main(request):
-    products = Product.objects.all()  # Fetch all products
-    top_products = PopularCategory.objects.all()  # Fetch all top products
-    top_rateds = TopRated.objects.all().order_by('-id')[:3]
-    specials = Special.objects.all().order_by('-id')[:3]
-    bestsellers = Bestsellers.objects.all().order_by('-id')[:3]
-    return render(request, 'index.html', {
+def main(request, template_name='index.html'):
+    products = Product.objects.all().order_by('id')  # Fetch all products
+    top_products = Product.objects.filter(status__name='new').order_by('-id')[:9]  # Fetch all top products
+    top_rateds = Product.objects.filter(status__name='top')
+    specials = Product.objects.filter(status__name='special')
+    bestsellers = Product.objects.filter(status__name='bestseller')
+    latest_products = Product.objects.all().order_by('-id')[:5]
+
+    context = {
         'products': products,
         'top_products': top_products,
         'top_rateds': top_rateds,
         'specials': specials,
         'bestsellers': bestsellers,
+        'latest_products': latest_products,
         'title': _('Main Page'),
         'welcome_message': _('Welcome to our store!'),
-    })
-    return render(request, 'index.html', {'products': products, 'top_products': top_products, 'top_rateds': top_rateds, 'specials': specials, 'bestsellers': bestsellers})
+    }
+
+    return render(request, template_name, context)
+
+def index(request):
+    return main(request, 'index.html')
+
+# # Shop sahifasi
+
+def shop(request):
+    return main(request, 'shop.html')
+
+# # Boshqa sahifalar
+
+# def about(request):
+#     return main(request, 'shop_detail.html')
+
 def handler404(request,exception):
     return render(request, '404.html',status=404)
 def product_list(request):
@@ -45,6 +63,7 @@ def product_list(request):
     return render(request, 'product_list.html', {'products': products})
 def shop_list(request):
     products_list = Product.objects.all()  # Fetch all products
+    latest_products = Product.objects.all().order_by('-id')[:5]
     
     # Set up pagination: 10 products per page (you can change this number)
     paginator = Paginator(products_list, 12)
@@ -62,12 +81,15 @@ def shop_list(request):
         products = paginator.page(paginator.num_pages)
     
     # Pass paginated products to the template
-    return render(request, 'shop.html', {'products': products})
+    return render(request, 'shop.html', {'products': products,'latest_products':latest_products})
 def shop_detail(request, pk):
     product = get_object_or_404(Product, pk=pk)  # Mahsulotni olib keling
+    slidproduct = Product.objects.all()
     categories = Category.objects.all()  # Barcha kategoriyalarni olib keling
     productclass = Productclass.objects.all()
-    return render(request, 'shop_detail.html', {'product': product, 'categories': categories,'productclass':productclass})
+    onlyoneproduct = OnlyOneProduct.objects.all()
+    latest_products = Product.objects.all().order_by('-id')[:5]
+    return render(request, 'shop_detail.html', {'product': product, 'categories': categories,'productclass':productclass,'onlyoneproduct':onlyoneproduct,'slidproduct':slidproduct,'latest_products':latest_products})
 
 class ProductListView(ListAPIView):
     queryset = Product.objects.all().order_by('-id')

@@ -46,15 +46,15 @@ msgstr "$50 dan boshlab buyurtmalar uchun"
 
 #: .\product\templates\index.html:1580
 msgid "Top Rated Products"
-msgstr "Eng yuqori baholangan mahsulotlar"
+msgstr "Tavsiya etiladi"
 
 #: .\product\templates\index.html:1726
 msgid "Special Offers"
-msgstr "Maxsus takliflar"
+msgstr "Chegirma"
 
 #: .\product\templates\index.html:1873
 msgid "Bestsellers "
-msgstr "Eng ko‘p sotilganlar"
+msgstr "Tasodifiy"
 
 #: .\product\views.py:37
 msgid "Main Page"

@@ -2184,9 +2184,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
     font-size: 15px;
     line-height: 19px;
     -ms-flex-positive: 1;
-    flex-grow: 1
+    flex-grow: 1;
 }
-
 .product-card__name a {
     color: inherit;
     transition: .15s
@@ -9191,11 +9190,11 @@ screen and (min-width:480px) and (-ms-high-contrast:active) {
 }
 
 .block-product-columns__item {
-    position: relative
+    position: relative;
 }
 
 .block-product-columns__item+.block-product-columns__item {
-    margin-top: -1px
+    margin-top: -1px;
 }
 
 .block-product-columns__item:hover {

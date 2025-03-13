@@ -1,6 +1,5 @@
 .product-card__img {
-  width: 200px !important;
+  width: 200px;
   height: 170px;
   object-fit: cover;
-  display: none;
 }
