@@ -4450,10 +4450,10 @@ screen and (-ms-high-contrast:active) {
     -ms-flex-align: center;
     align-items: center;
     height: 100%;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1;
     letter-spacing: .02em;
-    font-weight: 700;
+    font-weight: 800;
     color: inherit
 }
 
@@ -4571,7 +4571,7 @@ screen and (-ms-high-contrast:active) {
 }
 
 .nav-panel {
-    height: 54px;
+    height: 90px;
     background: #FFF !important;
     box-shadow: 0 1px rgba(0, 0, 0, .04), inset 0 -1px rgba(0, 0, 0, .04);
     color: #3d464d
@@ -4789,7 +4789,8 @@ screen and (-ms-high-contrast:active) {
     margin-right: 30px;
     -ms-flex-pack: center;
     justify-content: center;
-    color: inherit
+    color: inherit;
+    transform: translateX(-40px);
 }
 
 .site-header__logo a {
@@ -5696,6 +5697,7 @@ screen and (-ms-high-contrast:active) {
     margin-top: 2px;
     font-size: 15px
 }
+
 
 @media (max-width:767px) {
     .cart__actions {

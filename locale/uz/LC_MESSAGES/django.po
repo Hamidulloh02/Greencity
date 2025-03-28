@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 11:19+0500\n"
+"POT-Creation-Date: 2025-03-26 09:51+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,43 +26,149 @@ msgstr ""
 msgid "Russian"
 msgstr ""
 
-#: .\product\templates\index.html:45 .\product\templates\index.html:400
-#: .\product\templates\shop.html:52
+#: .\product\templates\index.html:45 .\product\templates\index.html:57
+#: .\product\templates\index.html:175 .\product\templates\shop.html:42
+#: .\product\templates\shop.html:54 .\product\templates\shop_detail.html:908
 msgid "Menu"
 msgstr "Bosh sahifa"
 
-#: .\product\templates\index.html:57 .\product\templates\index.html:139
-#: .\product\templates\index.html:499
+#: .\product\templates\index.html:61 .\product\templates\index.html:177
+#: .\product\templates\shop.html:58 .\product\templates\shop_detail.html:910
 msgid "Shop"
 msgstr "Maxsulotlar"
 
-#: .\product\templates\index.html:788
+#: .\product\templates\index.html:65 .\product\templates\index.html:179
+#: .\product\templates\shop.html:62 .\product\templates\shop_detail.html:912
+msgid "About"
+msgstr "Biz haqimizda"
+
+#: .\product\templates\index.html:69 .\product\templates\index.html:182
+#: .\product\templates\shop.html:66 .\product\templates\shop_detail.html:914
+msgid "Contact"
+msgstr "Aloqa"
+
+#: .\product\templates\index.html:494
 msgid "Free Shipping"
 msgstr "Bepul yetkazib berish"
 
-#: .\product\templates\index.html:789
+#: .\product\templates\index.html:495
 msgid "For orders from $50"
 msgstr "$50 dan boshlab buyurtmalar uchun"
 
-#: .\product\templates\index.html:1580
+#: .\product\templates\index.html:507
+msgid "Support 24/7"
+msgstr "24/7 qo‘llab-quvvatlash"
+
+#: .\product\templates\index.html:508
+msgid "Call us anytime"
+msgstr "Bizga istalgan vaqtda qo‘ng‘iroq qiling"
+
+#: .\product\templates\index.html:521
+#, python-format
+msgid "100%% Safety"
+msgstr "100%% xavfsizlik"
+
+#: .\product\templates\index.html:522
+msgid "Only secure payments"
+msgstr "Faqat xavfsiz to‘lovlar"
+
+#: .\product\templates\index.html:535
+msgid "Hot Offers"
+msgstr "Qizg‘in takliflar"
+
+#: .\product\templates\index.html:536
+#, python-format
+msgid "Discounts up to 90%%"
+msgstr "90%% gacha chegirmalar"
+
+#: .\product\templates\index.html:545
+msgid "Featured Products"
+msgstr "Tavsiya etiladi"
+
+#: .\product\templates\index.html:549
+msgid "All"
+msgstr "Hammasi"
+
+#: .\product\templates\index.html:583 .\product\templates\index.html:953
+msgid "New"
+msgstr "Yangi"
+
+#: .\product\templates\index.html:751
+
+msgid "Bestsellers"
+msgstr "Yangi tovarlar"
+
+#: .\product\templates\index.html:764
+msgid "Hot"
+msgstr ""
+
+#: .\product\templates\index.html:906
+msgid "Popular Categories"
+msgstr "Ommabop toifalar"
+
+#: .\product\templates\index.html:941
 msgid "Top Rated Products"
 msgstr "Tavsiya etiladi"
 
-#: .\product\templates\index.html:1726
+#: .\product\templates\index.html:1087
 msgid "Special Offers"
 msgstr "Chegirma"
 
-#: .\product\templates\index.html:1873
+#: .\product\templates\index.html:1233
 msgid "Bestsellers "
 msgstr "Tasodifiy"
 
-#: .\product\views.py:37
-msgid "Main Page"
-msgstr ""
+#: .\product\templates\shop_detail.html:919
+msgid "Customer Service"
+msgstr "Mijozlarga xizmat"
 
-#: .\product\views.py:38
+#: .\product\templates\shop_detail.html:985
+#, fuzzy
+#| msgid "Featured Products"
+msgid "Latest Products"
+msgstr "Tavsiya etiladi"
+
+#: .\product\templates\shop_detail.html:1190
+msgid "Description"
+msgstr "Tavsif"
+
+#: .\product\templates\shop_detail.html:1191
+msgid "Specification"
+msgstr " Texnik parametrlari"
+
+#: .\product\templates\shop_detail.html:1192
+msgid "Reviews"
+msgstr "Fikrlar"
+
+#: .\product\templates\shop_detail.html:1708
+msgid "Related Product"
+msgstr "Tavsiya etiladi"
+
+#: .\product\views.py:44
+msgid "Main Page"
+msgstr "Bosh sahifa"
+
+#: .\product\views.py:45
 msgid "Welcome to our store!"
-msgstr ""
+msgstr "Bizning do'konimizga xush kelibsiz"
+
+#~ msgid "Address "
+#~ msgstr "Manzil"
+
+#~ msgid "Sergile Nilufar 2A "
+#~ msgstr "Sergile Nilufar 2A"
+
+#~ msgid "Newsletter"
+#~ msgstr "Axborot byulleteni"
+
+#~ msgid "Email Address "
+#~ msgstr "E-pochta manzili"
+
+#~ msgid "Subscribe"
+#~ msgstr "Junatish"
+
+#~ msgid "Social network "
+#~ msgstr "Ijtimoiy tarmoq"
 
 #~ msgid "Tilni almashtirish"
 #~ msgstr "Переключить язык"

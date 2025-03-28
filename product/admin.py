@@ -5,7 +5,7 @@ from django.urls import reverse
 from django.utils.safestring import mark_safe
 
 # Register your models here.
-from .models import Product,Description,Category,Productclass,Brand,Topproduct,OnlyOneProduct,PopularCategory,Special,Bestsellers,TopRated,Images,Status
+from .models import Product,Description,Category,Productclass,Brand,Topproduct,OnlyOneProduct,PopularCategory,Images,Status
 
 class DescriptionInline(admin.TabularInline):
     model = Description
@@ -19,6 +19,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ('image_tag', 'title')
     list_filter = ('category','productclass')
     inlines = [DescriptionInline,ImagesInline]
+    
 
     def image_tag(self, obj):  # ✅ `Product` emas, `obj` bo‘lishi kerak
         if obj.img:  # Rasm borligini tekshiramiz

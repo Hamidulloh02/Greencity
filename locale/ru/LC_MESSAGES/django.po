@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 11:19+0500\n"
+"POT-Creation-Date: 2025-03-26 09:51+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,43 +28,150 @@ msgstr ""
 msgid "Russian"
 msgstr ""
 
-#: .\product\templates\index.html:45 .\product\templates\index.html:400
-#: .\product\templates\shop.html:52
+#: .\product\templates\index.html:45 .\product\templates\index.html:57
+#: .\product\templates\index.html:175 .\product\templates\shop.html:42
+#: .\product\templates\shop.html:54 .\product\templates\shop_detail.html:908
 msgid "Menu"
 msgstr "Главный"
 
-#: .\product\templates\index.html:57 .\product\templates\index.html:139
-#: .\product\templates\index.html:499
+#: .\product\templates\index.html:61 .\product\templates\index.html:177
+#: .\product\templates\shop.html:58 .\product\templates\shop_detail.html:910
 msgid "Shop"
 msgstr "Магазин"
 
-#: .\product\templates\index.html:788
+#: .\product\templates\index.html:65 .\product\templates\index.html:179
+#: .\product\templates\shop.html:62 .\product\templates\shop_detail.html:912
+msgid "About"
+msgstr "О Нас"
+
+#: .\product\templates\index.html:69 .\product\templates\index.html:182
+#: .\product\templates\shop.html:66 .\product\templates\shop_detail.html:914
+msgid "Contact"
+msgstr "Контакт"
+
+#: .\product\templates\index.html:494
 msgid "Free Shipping"
 msgstr "Бесплатная доставка"
 
-#: .\product\templates\index.html:789
+#: .\product\templates\index.html:495
 msgid "For orders from $50"
 msgstr "Для заказов от 50$"
 
-#: .\product\templates\index.html:1580
+#: .\product\templates\index.html:507
+msgid "Support 24/7"
+msgstr "Поддержка 24/7"
+
+#: .\product\templates\index.html:508
+msgid "Call us anytime"
+msgstr "Звоните нам в любое время"
+
+#: .\product\templates\index.html:521
+#, python-format
+msgid "100%% Safety"
+msgstr "100%% безопасность"
+
+#: .\product\templates\index.html:522
+msgid "Only secure payments"
+msgstr "Только безопасные платежи"
+
+#: .\product\templates\index.html:535
+msgid "Hot Offers"
+msgstr "Горячие предложения"
+
+#: .\product\templates\index.html:536
+#, python-format
+msgid "Discounts up to 90%%"
+msgstr "Скидки до 90%%"
+
+#: .\product\templates\index.html:545
+msgid "Featured Products"
+msgstr "Товары с высоким рейтингом"
+
+#: .\product\templates\index.html:549
+msgid "All"
+msgstr "Все"
+
+#: .\product\templates\index.html:583 .\product\templates\index.html:953
+msgid "New"
+msgstr "Новый"
+
+#: .\product\templates\index.html:751
+msgid "Bestsellers"
+msgstr " Бестселлеры"
+
+#: .\product\templates\index.html:764
+msgid "Hot"
+msgstr ""
+
+#: .\product\templates\index.html:906
+msgid "Popular Categories"
+msgstr "Популярные категории"
+
+#: .\product\templates\index.html:941
 msgid "Top Rated Products"
 msgstr "Товары с высоким рейтингом"
 
-#: .\product\templates\index.html:1726
+#: .\product\templates\index.html:1087
 msgid "Special Offers"
 msgstr "Специальные предложения"
 
-#: .\product\templates\index.html:1873
+#: .\product\templates\index.html:1233
 msgid "Bestsellers "
 msgstr " Бестселлеры"
 
-#: .\product\views.py:37
-msgid "Main Page"
-msgstr ""
+#: .\product\templates\shop_detail.html:919
+msgid "Customer Service"
+msgstr "Обслуживание клиентов"
 
-#: .\product\views.py:38
+#: .\product\templates\shop_detail.html:985
+#, fuzzy
+#| msgid "Featured Products"
+msgid "Latest Products"
+msgstr "Товары с высоким рейтингом"
+
+#: .\product\templates\shop_detail.html:1190
+msgid "Description"
+msgstr "Описание"
+
+#: .\product\templates\shop_detail.html:1191
+msgid "Specification"
+msgstr "Характеристики"
+
+#: .\product\templates\shop_detail.html:1192
+msgid "Reviews"
+msgstr "Отзывы"
+
+#: .\product\templates\shop_detail.html:1708
+#, fuzzy
+#| msgid "Featured Products"
+msgid "Related Product"
+msgstr "Товары с высоким рейтингом"
+
+#: .\product\views.py:44
+msgid "Main Page"
+msgstr "Главная страница"
+
+#: .\product\views.py:45
 msgid "Welcome to our store!"
-msgstr ""
+msgstr "Добро пожаловать в наш магазин!"
+
+#~ msgid "Address "
+#~ msgstr "Адрес"
+
+#~ msgid "Sergile Nilufar 2A "
+#~ msgstr "Сергиле Нилуфар 2А"
+
+#~ msgid "Newsletter"
+#~ msgstr "Контакт"
+
+#~ msgid "Email Address "
+#~ msgstr "Адрес электронной почты"
+
+#~ msgid "Subscribe"
+#~ msgstr "Подписаться"
+
+#~ msgid "Social network "
+#~ msgstr "Социальная сеть"
 
 #~ msgid "Language"
 #~ msgstr "язык"

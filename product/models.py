@@ -82,29 +82,3 @@ class PopularCategory(models.Model):
     def __str__(self):
         return self.title
     
-class TopRated(models.Model):
-    img = models.ImageField(upload_to="./images")
-    title = models.CharField(max_length=1000)
-    info = RichTextField()
-    descript_text = RichTextField()
-
-    def __str__(self):
-        return self.title
-
-class Special(models.Model):
-    img = models.ImageField(upload_to="./images")
-    title = models.CharField(max_length=1000)
-    info = RichTextField()
-    descript_text = RichTextField()
-
-    def __str__(self):
-        return self.title
-    
-class Bestsellers(models.Model):
-    img = models.ImageField(upload_to="./images")
-    title = models.CharField(max_length=1000)
-    info = RichTextField()
-    descript_text = RichTextField()
-
-    def __str__(self):
-        return self.title

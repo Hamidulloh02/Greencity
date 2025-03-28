@@ -139,6 +139,8 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'ru'
+MODELTRANSLATION_LANGUAGES = ('uz', 'ru')
 TRANSLATABLE_MODEL_MODULES = []
 TRANSLATABLE_MODEL_MODULES = [
     'blog_project.models',  # O'zingizning modelingiz moduli nomini yozing

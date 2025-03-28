@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework.generics import ListAPIView, RetrieveAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView, RetrieveUpdateAPIView
-from .models import Product, Description, Category, Productclass, Brand, Topproduct, OnlyOneProduct, PopularCategory,OnlyOneProduct
+from .models import Product, Description, Category, Productclass, Brand, Topproduct, OnlyOneProduct, PopularCategory
 from .serializers import productSerializers, descriptionSerializers, CategorySerializer, ClassSerializers, BrandSerializers, TopproductSerializers, OnlyOneProSerializers
 from rest_framework.permissions import IsAuthenticated
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -29,6 +29,8 @@ def main(request, template_name='index.html'):
     specials = Product.objects.filter(status__name='special')
     bestsellers = Product.objects.filter(status__name='bestseller')
     latest_products = Product.objects.all().order_by('-id')[:5]
+    popularCategorys = PopularCategory.objects.all()
+    onlyoneproduct = OnlyOneProduct.objects.all()
 
     context = {
         'products': products,
@@ -37,6 +39,8 @@ def main(request, template_name='index.html'):
         'specials': specials,
         'bestsellers': bestsellers,
         'latest_products': latest_products,
+        'popularCategorys': popularCategorys,
+        'onlyoneproduct': onlyoneproduct,
         'title': _('Main Page'),
         'welcome_message': _('Welcome to our store!'),
     }

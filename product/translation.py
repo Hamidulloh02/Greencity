@@ -1,5 +1,5 @@
 from modeltranslation.translator import register, TranslationOptions
-from .models import Product, PopularCategory,TopRated,Special,Bestsellers
+from .models import Product, PopularCategory,Productclass
 @register(Product)
 class ProductTranslationOptions(TranslationOptions):
     fields = ('title', 'info', 'descript_text')
@@ -8,14 +8,8 @@ class ProductTranslationOptions(TranslationOptions):
 class PopularCategoryTranslationOptions(TranslationOptions):
     fields = ('title', 'info', 'descript_text')
 
-@register(TopRated)
-class TopRatedTranslationOptions(TranslationOptions):
-    fields = ('title', 'info', 'descript_text')
+@register(Productclass)
+class ProductclassTranslationOptions(TranslationOptions):
+    fields = ('name',)
 
-@register(Special)
-class SpecialTranslationOptions(TranslationOptions):
-    fields = ('title', 'info', 'descript_text')
 
-@register(Bestsellers)
-class BestsellersTranslationOptions(TranslationOptions):
-    fields = ('title', 'info', 'descript_text')
