@@ -33,10 +33,10 @@ class Status(models.Model):
 
 class Product(models.Model):
     title = models.CharField(max_length=1000)
-    img = models.ImageField(upload_to="./images")
+    img = models.ImageField(upload_to="./images" ,null=True,blank=True)
     info = RichTextField()
     descript_text = RichTextField()
-    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
+    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True,blank=True)
     productclass = models.ForeignKey(Productclass, on_delete=models.SET_NULL,null=True,blank=True)
     brand = models.ForeignKey(Brand, on_delete=models.SET_NULL,null=True,blank=True)
     status = models.ForeignKey(Status, on_delete=models.SET_NULL,null=True,blank=True)
@@ -81,4 +81,3 @@ class PopularCategory(models.Model):
 
     def __str__(self):
         return self.title
-    

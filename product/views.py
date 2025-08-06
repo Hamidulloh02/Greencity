@@ -23,8 +23,8 @@ from rest_framework.filters import SearchFilter
 
 # Create your views here.
 def main(request, template_name='index.html'):
-    products = Product.objects.all().order_by('id')  # Fetch all products
-    top_products = Product.objects.filter(status__name='new').order_by('-id')[:9]  # Fetch all top products
+    products = Product.objects.all().order_by('-id')  # Fetch all products
+    top_products = Product.objects.filter(status__name='new').order_by('-id')[:12]  # Fetch all top products
     top_rateds = Product.objects.filter(status__name='top')
     specials = Product.objects.filter(status__name='special')
     bestsellers = Product.objects.filter(status__name='bestseller')
@@ -63,10 +63,10 @@ def shop(request):
 def handler404(request,exception):
     return render(request, '404.html',status=404)
 def product_list(request):
-    products = Product.objects.all()  # Fetch all products
+    products = Product.objects.all().order_by('-id')  # Fetch all products
     return render(request, 'product_list.html', {'products': products})
 def shop_list(request):
-    products_list = Product.objects.all()  # Fetch all products
+    products_list = Product.objects.all().order_by('-id')  # Fetch all products
     latest_products = Product.objects.all().order_by('-id')[:5]
     
     # Set up pagination: 10 products per page (you can change this number)

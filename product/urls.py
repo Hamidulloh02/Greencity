@@ -5,6 +5,7 @@ from django.conf.urls.i18n import i18n_patterns
 from django.utils.translation import gettext_lazy as _
 from .views import ProductListView,CategoryListView,SingleCategoryListView,ProductPagination,SingleProductListView,ClassListApiView,BrandListapiview,TopproductAPiView,OnlyProListView,main,shop_list,shop_detail,PopularCategoryView
 
+
 urlpatterns = [
     path('',main),
     path('shop/',shop_list, name='shop_list'),

@@ -34,323 +34,86 @@
     </div><!-- quickview-modal / end --><!-- mobilemenu -->
     <div class="mobilemenu">
         <div class="mobilemenu__backdrop"></div>
+        
         <div class="mobilemenu__body">
             <div class="mobilemenu__header">
-                <div class="mobilemenu__title">Menu</div><button type="button" class="mobilemenu__close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-
+                <div class="mobilemenu__title"><img style="width: 200px;" src="{% static 'images/spectrolab_black.png' %}" alt="logo"></div><button type="button" class="mobilemenu__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
                 </button>
+                
             </div>
+            
             <div class="mobilemenu__content">
                 <ul class="mobile-links mobile-links--level--0" data-collapse
                     data-collapse-opened-class="mobile-links__item--open">
-                    <li class="mobile-links__item" data-collapse-item>
-                        <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">Categories</a>
-                            <button class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
-                                    class="mobile-links__item-arrow" width="12px" height="7px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-                                </svg></button></div>
-                        <div class="mobile-links__item-sub-links" data-collapse-content>
-                            <ul class="mobile-links mobile-links--level--1">
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="#"
-                                            class="mobile-links__item-link">Power Tools</a> <button
-                                            class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
-                                                class="mobile-links__item-arrow" width="12px" height="7px">
-                                                <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-                                            </svg></button></div>
-                                    <div class="mobile-links__item-sub-links" data-collapse-content>
-                                        <ul class="mobile-links mobile-links--level--2">
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href="#"
-                                                        class="mobile-links__item-link">Engravers</a></div>
-                                            </li>
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href="#"
-                                                        class="mobile-links__item-link">Wrenches</a></div>
-                                            </li>
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href="#"
-                                                        class="mobile-links__item-link">Wall Chaser</a></div>
-                                            </li>
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href="#"
-                                                        class="mobile-links__item-link">Pneumatic Tools</a></div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="#"
-                                            class="mobile-links__item-link">Machine Tools</a> <button
-                                            class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
-                                                class="mobile-links__item-arrow" width="12px" height="7px">
-                                                <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-                                            </svg></button></div>
-                                    <div class="mobile-links__item-sub-links" data-collapse-content>
-                                        <ul class="mobile-links mobile-links--level--2">
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href="#"
-                                                        class="mobile-links__item-link">Thread Cutting</a></div>
-                                            </li>
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href="#"
-                                                        class="mobile-links__item-link">Chip Blowers</a></div>
-                                            </li>
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href="#"
-                                                        class="mobile-links__item-link">Sharpening Machines</a></div>
-                                            </li>
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href="#"
-                                                        class="mobile-links__item-link">Pipe Cutters</a></div>
-                                            </li>
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href="#"
-                                                        class="mobile-links__item-link">Slotting machines</a></div>
-                                            </li>
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href="#"
-                                                        class="mobile-links__item-link">Lathes</a></div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
+                    <li class="mobile-links__item !important" data-collapse-item>
+                        <div class="mobile-links__item-title"><a href="/" class="mobile-links__item-link">{% trans "Menu"%}</a>
                         </div>
                     </li>
-                    <li class="mobile-links__item" data-collapse-item>
-                        <div class="mobile-links__item-title"><a href="shop-grid-3-columns-sidebar.html"
-                                class="mobile-links__item-link">Shop</a> <button class="mobile-links__item-toggle"
-                                type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
-                                    height="7px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-                                </svg></button></div>
-                        <div class="mobile-links__item-sub-links" data-collapse-content>
-                            <ul class="mobile-links mobile-links--level--1">
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="shop-grid-3-columns-sidebar.html"
-                                            class="mobile-links__item-link">Shop Grid</a> <button
-                                            class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
-                                                class="mobile-links__item-arrow" width="12px" height="7px">
-                                                <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-                                            </svg></button></div>
-                                    <div class="mobile-links__item-sub-links" data-collapse-content>
-                                        <ul class="mobile-links mobile-links--level--2">
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a
-                                                        href="shop-grid-3-columns-sidebar.html"
-                                                        class="mobile-links__item-link">3 Columns Sidebar</a></div>
-                                            </li>
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a
-                                                        href="shop-grid-4-columns-full.html"
-                                                        class="mobile-links__item-link">4 Columns Full</a></div>
-                                            </li>
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a
-                                                        href="shop-grid-5-columns-full.html"
-                                                        class="mobile-links__item-link">5 Columns Full</a></div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="shop-list.html"
-                                            class="mobile-links__item-link">Shop List</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="shop-right-sidebar.html"
-                                            class="mobile-links__item-link">Shop Right Sidebar</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="product.html"
-                                            class="mobile-links__item-link">Product</a> <button
-                                            class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
-                                                class="mobile-links__item-arrow" width="12px" height="7px">
-                                                <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-                                            </svg></button></div>
-                                    <div class="mobile-links__item-sub-links" data-collapse-content>
-                                        <ul class="mobile-links mobile-links--level--2">
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href="product.html"
-                                                        class="mobile-links__item-link">Product</a></div>
-                                            </li>
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href="product-alt.html"
-                                                        class="mobile-links__item-link">Product Alt</a></div>
-                                            </li>
-                                            <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href="product-sidebar.html"
-                                                        class="mobile-links__item-link">Product Sidebar</a></div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="cart.html"
-                                            class="mobile-links__item-link">Cart</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="checkout.html"
-                                            class="mobile-links__item-link">Checkout</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="wishlist.html"
-                                            class="mobile-links__item-link">Wishlist</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="compare.html"
-                                            class="mobile-links__item-link">Compare</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="account.html"
-                                            class="mobile-links__item-link">My Account</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="track-order.html"
-                                            class="mobile-links__item-link">Track Order</a></div>
-                                </li>
-                            </ul>
+                    <li class="mobile-links__item !important" data-collapse-item>
+                        <div class="mobile-links__item-title"><a href="/shop" class="mobile-links__item-link">{% trans "Shop"%}</a>
                         </div>
                     </li>
-                    <li class="mobile-links__item" data-collapse-item>
-                        <div class="mobile-links__item-title"><a href="blog-classic.html"
-                                class="mobile-links__item-link">Blog</a> <button class="mobile-links__item-toggle"
-                                type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
-                                    height="7px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-                                </svg></button></div>
-                        <div class="mobile-links__item-sub-links" data-collapse-content>
-                            <ul class="mobile-links mobile-links--level--1">
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="blog-classic.html"
-                                            class="mobile-links__item-link">Blog Classic</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="blog-grid.html"
-                                            class="mobile-links__item-link">Blog Grid</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="blog-list.html"
-                                            class="mobile-links__item-link">Blog List</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="blog-left-sidebar.html"
-                                            class="mobile-links__item-link">Blog Left Sidebar</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="post.html"
-                                            class="mobile-links__item-link">Post Page</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="post-without-sidebar.html"
-                                            class="mobile-links__item-link">Post Without Sidebar</a></div>
-                                </li>
-                            </ul>
+                    <li class="mobile-links__item !important" data-collapse-item>
+                        <div class="mobile-links__item-title"><a href="" class="mobile-links__item-link">{% trans "About"%}</a>
                         </div>
                     </li>
-                    <li class="mobile-links__item" data-collapse-item>
-                        <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">Pages</a>
-                            <button class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
-                                    class="mobile-links__item-arrow" width="12px" height="7px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-                                </svg></button></div>
-                        <div class="mobile-links__item-sub-links" data-collapse-content>
-                            <ul class="mobile-links mobile-links--level--1">
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="about-us.html"
-                                            class="mobile-links__item-link">About Us</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="contact-us.html"
-                                            class="mobile-links__item-link">Contact Us</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="contact-us-alt.html"
-                                            class="mobile-links__item-link">Contact Us Alt</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="404.html"
-                                            class="mobile-links__item-link">404</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="terms-and-conditions.html"
-                                            class="mobile-links__item-link">Terms And Conditions</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="faq.html"
-                                            class="mobile-links__item-link">FAQ</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="components.html"
-                                            class="mobile-links__item-link">Components</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="typography.html"
-                                            class="mobile-links__item-link">Typography</a></div>
-                                </li>
-                            </ul>
+                    <li class="mobile-links__item !important" data-collapse-item>
+                        <div class="mobile-links__item-title"><a href="" class="mobile-links__item-link">{% trans "Contact"%}</a>
                         </div>
                     </li>
-                    <li class="mobile-links__item" data-collapse-item>
-                        <div class="mobile-links__item-title"><a data-collapse-trigger
-                                class="mobile-links__item-link">Currency</a> <button class="mobile-links__item-toggle"
-                                type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
-                                    height="7px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-                                </svg></button></div>
-                        <div class="mobile-links__item-sub-links" data-collapse-content>
-                            <ul class="mobile-links mobile-links--level--1">
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">€
-                                            Euro</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">£
-                                            Pound Sterling</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">$
-                                            US Dollar</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">₽
-                                            Russian Ruble</a></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="mobile-links__item" data-collapse-item>
-                        <div class="mobile-links__item-title"><a data-collapse-trigger
-                                class="mobile-links__item-link">Language</a> <button class="mobile-links__item-toggle"
-                                type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
-                                    height="7px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-                                </svg></button></div>
-                        <div class="mobile-links__item-sub-links" data-collapse-content>
-                            <ul class="mobile-links mobile-links--level--1">
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="#"
-                                            class="mobile-links__item-link">English</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="#"
-                                            class="mobile-links__item-link">French</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="#"
-                                            class="mobile-links__item-link">German</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="#"
-                                            class="mobile-links__item-link">Russian</a></div>
-                                </li>
-                                <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="#"
-                                            class="mobile-links__item-link">Italian</a></div>
-                                </li>
-                            </ul>
+                    <li class="nav-links__item ms-auto">
+                        <div class="topbar__item mobile-links__item">
+                            <div class="topbar-languages"
+                                style="display: flex; gap: 15px; align-items: center; margin-left: 20px;">
+                                <a href="#" class="language-link" data-form-id="lang-uz"
+                                    style="display: flex; align-items: center; gap: 5px; text-decoration: none;">
+                                    <img width="30" src="{% static 'images/languages/uzbek-flag.jpg' %}" alt="">
+                                    🇺🇿
+                                </a>
+                                <form id="lang-uz" action="/uz/" method="post" style="display: none;">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="language" value="uz">
+                                </form>
+
+                                <a href="#" class="language-link mb-1" data-form-id="lang-ru"
+                                    style="display: flex; align-items: center; gap: 5px; text-decoration: none;">
+                                    <img width="30" src="{% static 'images/languages/language-4.png' %}" alt="">
+                                    🇷🇺
+                                </a>
+                                <form id="lang-ru" action="/ru/" method="post" style="display: none;">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="language" value="ru">
+                                </form>
+                            </div>
+
+                            <script>
+                                document.querySelectorAll('.language-link').forEach(link => {
+                                    link.addEventListener('click', function (event) {
+                                        event.preventDefault();
+                                        let formId = this.getAttribute('data-form-id');
+                                        document.getElementById(formId).submit();
+                                        setTimeout(() => location.reload(), 500);
+                                    });
+                                });
+                            </script>
+
+
+                            <script>
+                                document.querySelectorAll('.language-link').forEach(link => {
+                                    link.addEventListener('click', function (event) {
+                                        event.preventDefault();
+                                        let formId = this.getAttribute('data-form-id');
+                                        document.getElementById(formId).submit();
+                                        setTimeout(() => location.reload(), 500);
+                                    });
+                                });
+                            </script>
+
                         </div>
                     </li>
                 </ul>
@@ -385,7 +148,7 @@
                 <div class="site-header__middle container">
                     <div class="site-header__logo">
                         <a href="/">
-                            <img src="{% static '../static/images/spectrolab_kolba.png' %}" alt="Logo" width="210"
+                            <img src="{% static '../static/images/spectrolab_kolba.png' %}" alt="Logo" width="200"
                                 height="80">
                         </a>
                     </div>
@@ -895,7 +658,7 @@
                 <div class="page-header__container container">
                     <div class="page-header__breadcrumb">
                         
-                        <nav aria-label="breadcrumb">
+                        <!-- <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a> <svg class="breadcrumb-arrow"
                                         width="6px" height="9px">
@@ -908,7 +671,7 @@
                                 <li class="breadcrumb-item active" aria-current="page">Brandix Screwdriver SCREW1500ACC
                                 </li>
                             </ol>
-                        </nav>
+                        </nav> -->
                     </div>
                 </div>
             </div>
@@ -979,25 +742,25 @@
                                         <div class="product-gallery">
                                             <div class="product-gallery__featured">
                                                 <div class="owl-carousel" id="product-image">
-                                                    {% for item in product.images.all %}
+                                                    
 
                                                     <a
                                                         href="images/products/product-16.html" target="_blank"><img
-                                                            src="{{item.image.url}}" alt="">
+                                                            src="{{product.img.url}}" alt="">
                                                     </a>
-                                                    {% endfor %}
+                                               
                                                         
                                                         </div>
                                             </div>
                                             <div class="product-gallery__carousel">
                                                 <div class="owl-carousel" id="product-carousel">
-                                                    {% for item in product.images.all %}
+                                                    
                                                     <a href="#"
                                                         class="product-gallery__carousel-item"><img
                                                             class="product-gallery__carousel-image"
-                                                            src="{{item.image.url}}" alt=""> 
+                                                            src="{{product.img.url}}" alt=""> 
                                                     </a>
-                                                    {% endfor %}
+                                                
                                                         
                                                         </div>
                                             </div>
@@ -1704,7 +1467,7 @@
                                                 <div class="product-card__image"><a href="{% url 'shop_detail' item.id %}"><img
                                                             src="{{ item.img.url }}" alt=""></a></div>
                                                 <div class="product-card__info">
-                                                    <div class="product-card__name"><a href="product.html">Electric
+                                                    <div class="product-card__name"><a href="{% url 'shop_detail' item.id %}">Electric
                                                             Planer Brandix KL370090G 300 Watts</a></div>
                                                     <div class="product-card__rating">
                                                         <div class="rating">
@@ -1863,18 +1626,18 @@
                                 <div class="site-footer__widget footer-contacts">
                                     <div class="site-header__logo ">
                                         <a href="/">
-                                            <img src="{% static 'images/green_logo_main.png' %}" alt="Logo" width="210"
+                                            <img src="{% static '../static/images/spectrolab_kolba.png' %}" alt="Logo" width="210"
                                                 height="80">
                                         </a>
                                     </div>
-                                    <h5>Address</h5>
+                                    <h5>Адрес</h5>
                                     <ul class="footer-contacts__contacts">
-                                        <li><i class="footer-contacts__icon fas fa-globe-americas"></i>Sergile Nilufar 2A
+                                        <li><i class="footer-contacts__icon fas fa-globe-americas"></i>Сергиле Нилуфар 2А
                                         </li>
                                         <li><i class="footer-contacts__icon far fa-envelope"></i> greencity@gmail.com
                                         </li>
                                         <li><i class="footer-contacts__icon fas fa-mobile-alt"></i> +99890 444 14 88</li>
-                                        <li><i class="footer-contacts__icon far fa-clock"></i> Mon-Sat 10:00pm - 7:00pm
+                                        <li><i class="footer-contacts__icon far fa-clock"></i>  Пн–Сб: с 09:00 до 18:00
                                         </li>
                                     </ul>
                                 </div>
@@ -1887,17 +1650,17 @@
                             </div>
                             <div class="col-12 col-md-12 col-lg-4">
                                 <div class="site-footer__widget footer-newsletter">
-                                    <h5 class="footer-newsletter__title">Newsletter</h5>
-                                    <div class="footer-newsletter__text">Praesent pellentesque volutpat ex, vitae auctor
-                                        lorem pulvinar mollis felis at lacinia.</div>
+                                    <h5 class="footer-newsletter__title">
+                                        Лабораторная посуда</h5>
+                                    <div class="footer-newsletter__text">Доставляем во все регионы Узбекистана.</div>
                                     <form action="#" class="footer-newsletter__form"><label class="sr-only"
-                                            for="footer-newsletter-address">Email Address</label> <input type="text"
+                                            for="footer-newsletter-address">Адрес электронной почты</label> <input type="text"
                                             class="footer-newsletter__form-input form-control"
-                                            id="footer-newsletter-address" placeholder="Email Address..."> <button
-                                            class="footer-newsletter__form-button btn btn-primary">Subscribe</button>
+                                            id="footer-newsletter-address" placeholder="электронной почты..."> <button
+                                            class="footer-newsletter__form-button btn btn-primary">
+                                            Подписаться</button>
                                     </form>
-                                    <div class="footer-newsletter__text footer-newsletter__text--social">Follow us on
-                                        social networks</div>
+                                    <div class="footer-newsletter__text footer-newsletter__text--social">Подпишитесь на нас в социальных сетях</div>
                                     <ul class="footer-newsletter__social-links">
                                         <li class="footer-newsletter__social-link footer-newsletter__social-link--facebook">
                                             <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>

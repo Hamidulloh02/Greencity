@@ -3,6 +3,7 @@ from django.utils.html import mark_safe
 from django.utils.translation import gettext_lazy as _
 from django.urls import reverse
 from django.utils.safestring import mark_safe
+from import_export.admin import ExportMixin, ImportExportModelAdmin
 
 # Register your models here.
 from .models import Product,Description,Category,Productclass,Brand,Topproduct,OnlyOneProduct,PopularCategory,Images,Status
@@ -15,7 +16,7 @@ class ImagesInline(admin.TabularInline):  # Klass nomi to‘g‘ri
     extra = 1
 
 @admin.register(Product)
-class ProductAdmin(admin.ModelAdmin):
+class ProductAdmin(ImportExportModelAdmin):  # ✅ `Product` emas, `ProductAdmin` bo‘lishi kerak
     list_display = ('image_tag', 'title')
     list_filter = ('category','productclass')
     inlines = [DescriptionInline,ImagesInline]

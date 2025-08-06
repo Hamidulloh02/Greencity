@@ -2092,7 +2092,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .product-card__image a {
     display: block;
-    padding-bottom: 100%;
+    /* padding-bottom: 100%; */
     position: relative
 }
 
@@ -4450,10 +4450,10 @@ screen and (-ms-high-contrast:active) {
     -ms-flex-align: center;
     align-items: center;
     height: 100%;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1;
     letter-spacing: .02em;
-    font-weight: 700;
+    font-weight: 800;
     color: inherit
 }
 
@@ -4571,7 +4571,7 @@ screen and (-ms-high-contrast:active) {
 }
 
 .nav-panel {
-    height: 54px;
+    height: 90px;
     background: #FFF !important;
     box-shadow: 0 1px rgba(0, 0, 0, .04), inset 0 -1px rgba(0, 0, 0, .04);
     color: #3d464d
@@ -4789,7 +4789,8 @@ screen and (-ms-high-contrast:active) {
     margin-right: 30px;
     -ms-flex-pack: center;
     justify-content: center;
-    color: inherit
+    color: inherit;
+    transform: translateX(-40px);
 }
 
 .site-header__logo a {
@@ -4984,10 +4985,6 @@ screen and (-ms-high-contrast:active) {
 }
 
 @media (max-width:767px) {
-    .footer-contacts {
-        text-align: center
-    }
-
     .footer-contacts__title {
         font-size: 28px;
         margin-bottom: 16px
@@ -5026,7 +5023,6 @@ screen and (-ms-high-contrast:active) {
 
     .footer-links {
         margin-top: 42px;
-        text-align: center
     }
 }
 
@@ -5701,6 +5697,7 @@ screen and (-ms-high-contrast:active) {
     margin-top: 2px;
     font-size: 15px
 }
+
 
 @media (max-width:767px) {
     .cart__actions {
@@ -8891,7 +8888,10 @@ screen and (min-width:480px) and (-ms-high-contrast:active) {
 @media (max-width:767px) and (min-width:576px),
 (max-width:1199px) and (min-width:992px) {
     .block-features--layout--classic .block-features__item {
-        padding: 12px
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .block-features--layout--classic .block-features__icon {
@@ -9253,7 +9253,7 @@ screen and (min-width:480px) and (-ms-high-contrast:active) {
 .block-products__list-item {
     display: -ms-flexbox;
     display: flex;
-    width: calc(33.3333% - 12px);
+    width: calc(25% - 12px);
     margin: 6px
 }
 

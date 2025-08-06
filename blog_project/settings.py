@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'rest_framework',
     "drf_yasg",
     'rest_framework_swagger',
+    'import_export',
     # mahally
     'corsheaders',
     'product',
@@ -184,8 +185,9 @@ AUTH_USER_MODEL = 'auth.User'
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static/')
 
+
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # Tilni saqlash uchun session
 LANGUAGE_COOKIE_NAME = 'django_language' 

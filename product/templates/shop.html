@@ -37,16 +37,19 @@
     </div><!-- quickview-modal / end --><!-- mobilemenu -->
     <div class="mobilemenu">
         <div class="mobilemenu__backdrop"></div>
+        
         <div class="mobilemenu__body">
             <div class="mobilemenu__header">
-                <div class="mobilemenu__title">{% trans "Menu" %}</div><button type="button" class="mobilemenu__close">
+                <div class="mobilemenu__title"><img style="width: 200px;" src="{% static 'images/spectrolab_black.png' %}" alt=""></div><button type="button" class="mobilemenu__close">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                         viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                         <path
                             d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                     </svg>
                 </button>
+                
             </div>
+            
             <div class="mobilemenu__content">
                 <ul class="mobile-links mobile-links--level--0" data-collapse
                     data-collapse-opened-class="mobile-links__item--open">
@@ -59,11 +62,11 @@
                         </div>
                     </li>
                     <li class="mobile-links__item !important" data-collapse-item>
-                        <div class="mobile-links__item-title"><a href="/about" class="mobile-links__item-link">{% trans "About"%}</a>
+                        <div class="mobile-links__item-title"><a href="" class="mobile-links__item-link">{% trans "About"%}</a>
                         </div>
                     </li>
                     <li class="mobile-links__item !important" data-collapse-item>
-                        <div class="mobile-links__item-title"><a href="/contact" class="mobile-links__item-link">{% trans "Contact"%}</a>
+                        <div class="mobile-links__item-title"><a href="" class="mobile-links__item-link">{% trans "Contact"%}</a>
                         </div>
                     </li>
                     <li class="nav-links__item ms-auto">
@@ -149,23 +152,7 @@
                                     <div class="mobile-header__search-body"></div>
                                 </form>
                             </div>
-                            <div class="mobile-header__indicators">
-                                <div class="indicator indicator--mobile-search indicator--mobile d-sm-none"><button
-                                        class="indicator__button"><span class="indicator__area"><svg width="20px"
-                                                height="20px">
-                                                <use xlink:href="images/sprite.svg#search-20"></use>
-                                            </svg></span></button></div>
-                                <div class="indicator indicator--mobile d-sm-flex d-none"><a href="wishlist.html"
-                                        class="indicator__button"><span class="indicator__area"><svg width="20px"
-                                                height="20px">
-                                                <use xlink:href="images/sprite.svg#heart-20"></use>
-                                            </svg> <span class="indicator__value">0</span></span></a></div>
-                                <div class="indicator indicator--mobile"><a href="cart.html"
-                                        class="indicator__button"><span class="indicator__area"><svg width="20px"
-                                                height="20px">
-                                                <use xlink:href="images/sprite.svg#cart-20"></use>
-                                            </svg> <span class="indicator__value">3</span></span></a></div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -173,95 +160,10 @@
         </header><!-- mobile site__header / end --><!-- desktop site__header -->
         <header class="site__header d-lg-block d-none">
             <div class="site-header"><!-- .topbar -->
-                <div class="site-header__topbar topbar">
-                    <div class="topbar__container container">
-                        <div class="topbar__row">
-                            <div class="topbar__item topbar__item--link"><a class="topbar-link"
-                                    href="about-us.html">About Us</a></div>
-                            <div class="topbar__item topbar__item--link"><a class="topbar-link"
-                                    href="contact-us.html">Contacts</a></div>
-                            <div class="topbar__item topbar__item--link"><a class="topbar-link" href="#">Store
-                                    Location</a></div>
-                            <div class="topbar__item topbar__item--link"><a class="topbar-link"
-                                    href="track-order.html">Track Order</a></div>
-                            <div class="topbar__item topbar__item--link"><a class="topbar-link"
-                                    href="blog-classic.html">Blog</a></div>
-                            <div class="topbar__spring"></div>
-                            <div class="topbar__item">
-                                <div class="topbar-dropdown"><button class="topbar-dropdown__btn" type="button">My
-                                        Account <svg width="7px" height="5px">
-                                            <use xlink:href="images/sprite.svg#arrow-rounded-down-7x5"></use>
-                                        </svg></button>
-                                    <div class="topbar-dropdown__body"><!-- .menu -->
-                                        <ul class="menu menu--layout--topbar">
-                                            <li><a href="account.html">Login</a></li>
-                                            <li><a href="account.html">Register</a></li>
-                                            <li><a href="#">Orders</a></li>
-                                            <li><a href="#">Addresses</a></li>
-                                        </ul><!-- .menu / end -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="topbar__item">
-                                <div class="topbar-dropdown"><button class="topbar-dropdown__btn"
-                                        type="button">Currency: <span class="topbar__item-value">USD</span> <svg
-                                            width="7px" height="5px">
-                                            <use xlink:href="images/sprite.svg#arrow-rounded-down-7x5"></use>
-                                        </svg></button>
-                                    <div class="topbar-dropdown__body"><!-- .menu -->
-                                        <ul class="menu menu--layout--topbar">
-                                            <li><a href="#">€ Euro</a></li>
-                                            <li><a href="#">£ Pound Sterling</a></li>
-                                            <li><a href="#">$ US Dollar</a></li>
-                                            <li><a href="#">₽ Russian Ruble</a></li>
-                                        </ul><!-- .menu / end -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="topbar__item">
-                                <div class="topbar-dropdown"><button class="topbar-dropdown__btn"
-                                        type="button">Language: <span class="topbar__item-value">EN</span> <svg
-                                            width="7px" height="5px">
-                                            <use xlink:href="images/sprite.svg#arrow-rounded-down-7x5"></use>
-                                        </svg></button>
-                                    <div class="topbar-dropdown__body"><!-- .menu -->
-                                        <ul class="menu menu--layout--topbar menu--with-icons">
-                                            <li><a href="#">
-                                                    <div class="menu__icon"><img
-                                                            srcset="images/languages/language-1.png, images/languages/language-1@2x.png 2x"
-                                                            src="images/languages/language-1.png" alt=""></div>English
-                                                </a></li>
-                                            <li><a href="#">
-                                                    <div class="menu__icon"><img
-                                                            srcset="images/languages/language-2.png, images/languages/language-2@2x.png 2x"
-                                                            src="images/languages/language-2.png" alt=""></div>French
-                                                </a></li>
-                                            <li><a href="#">
-                                                    <div class="menu__icon"><img
-                                                            srcset="images/languages/language-3.png, images/languages/language-3@2x.png 2x"
-                                                            src="images/languages/language-3.png" alt=""></div>German
-                                                </a></li>
-                                            <li><a href="#">
-                                                    <div class="menu__icon"><img
-                                                            srcset="images/languages/language-4.png, images/languages/language-4@2x.png 2x"
-                                                            src="images/languages/language-4.png" alt=""></div>Russian
-                                                </a></li>
-                                            <li><a href="#">
-                                                    <div class="menu__icon"><img
-                                                            srcset="images/languages/language-5.png, images/languages/language-5@2x.png 2x"
-                                                            src="images/languages/language-5.png" alt=""></div>Italian
-                                                </a></li>
-                                        </ul><!-- .menu / end -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- .topbar / end -->
                 <div class="site-header__middle container">
                     <div class="site-header__logo">
                         <a href="/">
-                            <img src="{% static '../static/images/spectrolab_kolba.png' %}" alt="Logo" width="210"
+                            <img src="{% static '../static/images/spectrolab_kolba.png' %}" alt="Logo" width="200"
                                 height="80">
                         </a>
                     </div>
@@ -770,7 +672,7 @@
             <div class="page-header">
                 <div class="page-header__container container">
                     <div class="page-header__breadcrumb">
-                        <nav aria-label="breadcrumb">
+                        <!-- <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a> <svg class="breadcrumb-arrow"
                                         width="6px" height="9px">
@@ -780,12 +682,12 @@
                                         width="6px" height="9px">
                                         <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use>
                                     </svg></li>
-                                <li class="breadcrumb-item active" aria-current="page">Screwdrivers</li>
+                                <li class="breadcrumb-item active" aria-current="page">Лабораторная посуда</li>
                             </ol>
-                        </nav>
+                        </nav> -->
                     </div>
                     <div class="page-header__title">
-                        <h1>Screwdrivers</h1>
+                        <h1>Лабораторная посуда</h1>
                     </div>
                 </div>
             </div>
@@ -802,34 +704,34 @@
                                                     <button data-layout="grid-3-sidebar"
                                                         data-with-features="false" title="Grid" type="button"
                                                         class="layout-switcher__button layout-switcher__button--active">
-                                                        <img src="{% static 'images/grid-icon1.png'%}" alt="" style="width: 30px;">  
+                                                        <img src="{% static 'images/grid-four1.webp'%}" alt="" style="width: 30px;">  
                                                     </button> 
                                                     <button data-layout="grid-3-sidebar"
                                                         data-with-features="true" title="Grid With Features"
                                                         type="button" class="layout-switcher__button">
-                                                        <img src="{% static 'images/grid-icon2.png'%}" alt="" style="width: 30px;">  
+                                                        <img src="{% static 'images/grid-icon1.png'%}" alt="" style="width: 30px;">  
                                                     </button> 
                                                     <button data-layout="list"
                                                         data-with-features="false" title="List" type="button"
                                                         class="layout-switcher__button">
-                                                        <img src="{% static 'images/list-47.png'%}" alt="" style="width: 30px;">                                       
+                                                        <img src="{% static 'images/grid-list1.webp'%}" alt="" style="width: 25px;">                                       
                                                              </button></div>
                                             </div>
                                         </div>
-                                        <div class="view-options__legend">Showing 6 of 98 products</div>
+                                        <!-- <div class="view-options__legend">Showing 6 of 98 products</div> -->
                                         <div class="view-options__divider"></div>
-                                        <div class="view-options__control"><label for="">Sort By</label>
+                                        <!-- <div class="view-options__control"><label for="">Sort By</label>
                                             <div><select class="form-control form-control-sm" name="" id="">
                                                     <option value="">Default</option>
                                                     <option value="">Name (A-Z)</option>
                                                 </select></div>
-                                        </div>
-                                        <div class="view-options__control"><label for="">Show</label>
+                                        </div> -->
+                                        <!-- <div class="view-options__control"><label for="">Show</label>
                                             <div><select class="form-control form-control-sm" name="" id="">
                                                     <option value="">12</option>
                                                     <option value="">24</option>
                                                 </select></div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="products-view__list products-list" data-layout="grid-3-sidebar"
@@ -846,7 +748,7 @@
                                                 </div>
                                                 <div class="product-card__image "><a
                                                         href="{% url 'shop_detail' product.id %}"><img class="product_img"
-                                                            src="{{product.img.url}}" alt=""></a></div>
+                                                            src="{{product.img.url}}" alt="product_img"></a></div>
                                                 <div class="product-card__info">
                                                     <div class="product-card__name"><a href=''>{{ product.title}}</a>
                                                     </div>
@@ -996,159 +898,64 @@
 
                                     </div>
                                 </div>
-                                <div class="products-view__pagination">
+                                <div class="products-view__pagination mt-4">
                                     <nav aria-label="Page navigation">
                                         <ul class="pagination justify-content-center">
+                                
                                             <!-- Previous Button -->
                                             {% if products.has_previous %}
                                             <li class="page-item">
-                                                <a class="page-link" href="?page={{ products.previous_page_number }}"
-                                                    tabindex="-1">Previous</a>
+                                                <a class="page-link" href="?page={{ products.previous_page_number }}" aria-label="Previous">
+                                                    &laquo;
+                                                </a>
                                             </li>
                                             {% else %}
                                             <li class="page-item disabled">
-                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                <span class="page-link" aria-hidden="true">&laquo;</span>
                                             </li>
                                             {% endif %}
-
-                                            <!-- Page Numbers -->
+                                
+                                            <!-- Page Numbers with Ellipsis -->
                                             {% for num in products.paginator.page_range %}
-                                            {% if products.number == num %}
-                                            <li class="page-item active">
-                                                <a class="page-link" href="?page={{ num }}">{{ num }} <span
-                                                        class="sr-only">(current)</span></a>
-                                            </li>
-                                            {% else %}
-                                            <li class="page-item">
-                                                <a class="page-link" href="?page={{ num }}">{{ num }}</a>
-                                            </li>
-                                            {% endif %}
+                                                {% if num == 1 or num == products.paginator.num_pages or num >= products.number|add:"-2" and num <= products.number|add:"2" %}
+                                                    {% if num == products.number %}
+                                                        <li class="page-item active">
+                                                            <span class="page-link">{{ num }}</span>
+                                                        </li>
+                                                    {% else %}
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                                                        </li>
+                                                    {% endif %}
+                                                {% elif num == products.number|add:"-3" or num == products.number|add:"3" %}
+                                                    <li class="page-item disabled">
+                                                        <span class="page-link">...</span>
+                                                    </li>
+                                                {% endif %}
                                             {% endfor %}
-
+                                
                                             <!-- Next Button -->
                                             {% if products.has_next %}
                                             <li class="page-item">
-                                                <a class="page-link"
-                                                    href="?page={{ products.next_page_number }}">Next</a>
+                                                <a class="page-link" href="?page={{ products.next_page_number }}" aria-label="Next">
+                                                    &raquo;
+                                                </a>
                                             </li>
                                             {% else %}
                                             <li class="page-item disabled">
-                                                <a class="page-link" href="#">Next</a>
+                                                <span class="page-link" aria-hidden="true">&raquo;</span>
                                             </li>
                                             {% endif %}
+                                
                                         </ul>
                                     </nav>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
                     <div class="shop-layout__sidebar">
                         <div class="block block-sidebar">
-                            <div class="block-sidebar__item">
-                                <div class="widget-filters widget" data-collapse
-                                    data-collapse-opened-class="filter--opened">
-                                    <h4 class="widget__title">Filters</h4>
-                                    <div class="widget-filters__list">
-                                        <div class="widget-filters__item">
-                                            <div class="filter filter--opened" data-collapse-item><button type="button"
-                                                    class="filter__title" data-collapse-trigger>Categories <svg
-                                                        class="filter__arrow" width="12px" height="7px">
-                                                        <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7">
-                                                        </use>
-                                                    </svg></button>
-                                                <div class="filter__body" data-collapse-content>
-                                                    <div class="filter__container">
-                                                        <div class="filter-categories">
-                                                            <ul class="filter-categories__list">
-                                                                <li
-                                                                    class="filter-categories__item filter-categories__item--parent">
-                                                                    <svg class="filter-categories__arrow" width="6px"
-                                                                        height="9px">
-                                                                        <use
-                                                                            xlink:href="images/sprite.svg#arrow-rounded-left-6x9">
-                                                                        </use>
-                                                                    </svg> <a href="#">Construction & Repair</a>
-                                                                    <div class="filter-categories__counter">254</div>
-                                                                </li>
-                                                                <li
-                                                                    class="filter-categories__item filter-categories__item--parent">
-                                                                    <svg class="filter-categories__arrow" width="6px"
-                                                                        height="9px">
-                                                                        <use
-                                                                            xlink:href="images/sprite.svg#arrow-rounded-left-6x9">
-                                                                        </use>
-                                                                    </svg> <a href="#">Instruments</a>
-                                                                    <div class="filter-categories__counter">75</div>
-                                                                </li>
-                                                                <li
-                                                                    class="filter-categories__item filter-categories__item--current">
-                                                                    <a href="#">Power Tools</a>
-                                                                    <div class="filter-categories__counter">21</div>
-                                                                </li>
-                                                                <li
-                                                                    class="filter-categories__item filter-categories__item--child">
-                                                                    <a href="#">Drills & Mixers</a>
-                                                                    <div class="filter-categories__counter">15</div>
-                                                                </li>
-                                                                <li
-                                                                    class="filter-categories__item filter-categories__item--child">
-                                                                    <a href="#">Cordless Screwdrivers</a>
-                                                                    <div class="filter-categories__counter">2</div>
-                                                                </li>
-                                                                <li
-                                                                    class="filter-categories__item filter-categories__item--child">
-                                                                    <a href="#">Screwdrivers</a>
-                                                                    <div class="filter-categories__counter">30</div>
-                                                                </li>
-                                                                <li
-                                                                    class="filter-categories__item filter-categories__item--child">
-                                                                    <a href="#">Wrenches</a>
-                                                                    <div class="filter-categories__counter">7</div>
-                                                                </li>
-                                                                <li
-                                                                    class="filter-categories__item filter-categories__item--child">
-                                                                    <a href="#">Grinding Machines</a>
-                                                                    <div class="filter-categories__counter">5</div>
-                                                                </li>
-                                                                <li
-                                                                    class="filter-categories__item filter-categories__item--child">
-                                                                    <a href="#">Milling Cutters</a>
-                                                                    <div class="filter-categories__counter">2</div>
-                                                                </li>
-                                                                <li
-                                                                    class="filter-categories__item filter-categories__item--child">
-                                                                    <a href="#">Electric Spray Guns</a>
-                                                                    <div class="filter-categories__counter">9</div>
-                                                                </li>
-                                                                <li
-                                                                    class="filter-categories__item filter-categories__item--child">
-                                                                    <a href="#">Jigsaws</a>
-                                                                    <div class="filter-categories__counter">4</div>
-                                                                </li>
-                                                                <li
-                                                                    class="filter-categories__item filter-categories__item--child">
-                                                                    <a href="#">Jackhammers</a>
-                                                                    <div class="filter-categories__counter">0</div>
-                                                                </li>
-                                                                <li
-                                                                    class="filter-categories__item filter-categories__item--child">
-                                                                    <a href="#">Planers</a>
-                                                                    <div class="filter-categories__counter">12</div>
-                                                                </li>
-                                                                <li
-                                                                    class="filter-categories__item filter-categories__item--child">
-                                                                    <a href="#">Glue Guns</a>
-                                                                    <div class="filter-categories__counter">7</div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="block-sidebar__item d-none d-lg-block">
                                 <div class="widget-products widget">
@@ -1189,18 +996,18 @@
                                 <div class="site-footer__widget footer-contacts">
                                     <div class="site-header__logo ">
                                         <a href="/">
-                                            <img src="{% static 'images/green_logo_main.png' %}" alt="Logo" width="210"
+                                            <img src="{% static '../static/images/spectrolab_kolba.png' %}" alt="Logo" width="210"
                                                 height="80">
                                         </a>
                                     </div>
-                                    <h5>Address</h5>
+                                    <h5>Адрес</h5>
                                     <ul class="footer-contacts__contacts">
-                                        <li><i class="footer-contacts__icon fas fa-globe-americas"></i>Sergile Nilufar 2A
+                                        <li><i class="footer-contacts__icon fas fa-globe-americas"></i>Сергиле Нилуфар 2А
                                         </li>
                                         <li><i class="footer-contacts__icon far fa-envelope"></i> greencity@gmail.com
                                         </li>
                                         <li><i class="footer-contacts__icon fas fa-mobile-alt"></i> +99890 444 14 88</li>
-                                        <li><i class="footer-contacts__icon far fa-clock"></i> Mon-Sat 10:00pm - 7:00pm
+                                        <li><i class="footer-contacts__icon far fa-clock"></i>  Пн–Сб: с 09:00 до 18:00
                                         </li>
                                     </ul>
                                 </div>
@@ -1213,17 +1020,17 @@
                             </div>
                             <div class="col-12 col-md-12 col-lg-4">
                                 <div class="site-footer__widget footer-newsletter">
-                                    <h5 class="footer-newsletter__title">Newsletter</h5>
-                                    <div class="footer-newsletter__text">Praesent pellentesque volutpat ex, vitae auctor
-                                        lorem pulvinar mollis felis at lacinia.</div>
+                                    <h5 class="footer-newsletter__title">
+                                        Лабораторная посуда</h5>
+                                    <div class="footer-newsletter__text">Доставляем во все регионы Узбекистана.</div>
                                     <form action="#" class="footer-newsletter__form"><label class="sr-only"
-                                            for="footer-newsletter-address">Email Address</label> <input type="text"
+                                            for="footer-newsletter-address">Адрес электронной почты</label> <input type="text"
                                             class="footer-newsletter__form-input form-control"
-                                            id="footer-newsletter-address" placeholder="Email Address..."> <button
-                                            class="footer-newsletter__form-button btn btn-primary">Subscribe</button>
+                                            id="footer-newsletter-address" placeholder="электронной почты..."> <button
+                                            class="footer-newsletter__form-button btn btn-primary">
+                                            Подписаться</button>
                                     </form>
-                                    <div class="footer-newsletter__text footer-newsletter__text--social">Follow us on
-                                        social networks</div>
+                                    <div class="footer-newsletter__text footer-newsletter__text--social">Подпишитесь на нас в социальных сетях</div>
                                     <ul class="footer-newsletter__social-links">
                                         <li class="footer-newsletter__social-link footer-newsletter__social-link--facebook">
                                             <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
